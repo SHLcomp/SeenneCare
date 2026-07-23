@@ -1,0 +1,46 @@
+.offer2{
+    padding-block: 3em;
+    background: var(--bg-color2);
+    margin-top: 4em;
+    .cont{
+        display: flex;
+        // flex-direction: row-reverse;
+        justify-content: center;
+        gap: 3rem;
+        .img{
+            width: 40vw;
+            img{
+                border-radius: 30px;
+                width: 100%;
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50vw;
+            align-items: center;
+            float: left;
+            position: relative;
+            font-size: 1.5em;
+            h1{
+                font-family: var(--ttl-font);
+                padding-bottom: 10px;
+            }
+            p{
+                padding-bottom: 10px;
+            }
+            span, .cta-div{
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: fit-content;
+            }
+        .cta-div{
+            margin-top: 1em;
+        }
+            
+            
+        }
+    }
+}

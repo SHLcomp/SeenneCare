@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+  
+}
+
+/* shared styles */
+.a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.span {
+  color: var(--accent-color2);
+}
+.eyebrow{
+  font-size: xx-small;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.cta {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 55px;
+}
+.noise {
+  position: relative;
+  z-index: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.pexels.com/photos/1921326/pexels-photo-1921326.jpeg"); /*binary code*/
+    background: url("https://images.pexels.com/photos/9951077/pexels-photo-9951077.jpeg"); /*binary code 2*/
+    background: url("https://images.pexels.com/photos/758532/pexels-photo-758532.jpeg"); /*workplace*/
+    background: url("https://images.pexels.com/photos/9783810/pexels-photo-9783810.jpeg"); /*lonely person*/
+    background: url("https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg"); /*flowers*/
+    background: url("https://images.pexels.com/photos/268874/pexels-photo-268874.jpeg"); /*rain drops*/
+    background: url("https://images.pexels.com/photos/2748716/pexels-photo-2748716.jpeg"); /*rain drops 2*/
+    background: url("https://images.pexels.com/photos/5052331/pexels-photo-5052331.jpeg"); /*water splashes*/
+    background: url("https://images.pexels.com/photos/29334477/pexels-photo-29334477.jpeg"); /*water splashes 2*/
+
+    opacity: 0.05;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;800;900&display=swap');
+/* root variables */
+:root {
+  --hero-bg: linear-gradient(148deg, #c4c4c4 22%, #4790a2 100%);
+  --banner-bg: black;
+  --main-color: #c4c4c4;
+  --accent-color1: #4790a2;
+  --accent-color2: white;
+  --text-color: black;
+  --sec-text-color: #888;
+  --ttl-font: "Alegreya Sans SC";
+  --eyebrow: #c6a86c;
+  --brand-name-font: ;
+  --font: "serif";
+  --headline-font: ;
+  --bg-color2: #eeeeee;
+  --offer1: url(./assets/mk9.jpg);
+  --offer2: url("https://images.pexels.com/photos/9775171/pexels-photo-9775171.jpeg");;
+}

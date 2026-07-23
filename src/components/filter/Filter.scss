@@ -1,0 +1,31 @@
+.filtering {
+        background: var(--bg-color2);
+        padding: 1em;
+        width: 20vw;
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        // margin-top: 5px;
+        border-top: 1px solid #00000035;
+        h2{
+            font-family: var(--ttl-font);
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            h4{
+                font-family: var(--ttl-font);
+            }
+            label{
+                display: flex;
+                gap: 5px;
+            }
+        }
+
+    }

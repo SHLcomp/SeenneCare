@@ -1,0 +1,65 @@
+.concerns {
+    display: flex;
+    width: 100vw;
+    padding-top: 2em;
+    .cont {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .circle{
+            background: #dedcdc;
+            width: 10vw;
+            height: 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            h4{
+                font-family: var(--ttl-font);
+                font-size: 1.3em;
+                position: absolute;
+                top: 100%;
+                margin-top: .5rem;
+            }
+            
+
+        }
+        .link{
+            &:nth-child(1) .circle {
+                background-image: url("https://images.pexels.com/photos/682501/pexels-photo-682501.jpeg") !important;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(2) .circle {
+                background-image: url("https://images.pexels.com/photos/4812654/pexels-photo-4812654.jpeg") !important;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(3) .circle {
+                background-image: url("https://images.pexels.com/photos/1138531/pexels-photo-1138531.jpeg") !important;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(4) .circle {
+                background-image: url("https://images.pexels.com/photos/6874545/pexels-photo-6874545.jpeg") !important;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(5) .circle {
+                background-image: url("https://images.pexels.com/photos/9253763/pexels-photo-9253763.jpeg") !important;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

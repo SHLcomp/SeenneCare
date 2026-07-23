@@ -1,0 +1,49 @@
+.bestsellers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 2em;
+    padding-inline: 50px;
+
+    h1 {
+        padding: 0 50px;
+        font-family: var(--ttl-font);
+    }
+
+    .cards {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+
+        gap: 1rem;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 0rem 50px 1.5rem;
+
+        position: relative;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        -webkit-overflow-scrolling: touch;
+
+        // hide scrollbar (optional)
+        &::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #aaa;
+            border-radius: 20px;
+        }
+
+
+        .product {
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+        }
+    }
+}

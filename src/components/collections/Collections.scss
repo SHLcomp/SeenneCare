@@ -1,0 +1,48 @@
+.collections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 8em;
+    width: 100vw;
+    padding-inline: 50px;
+    h1{
+        padding: 0px 50px;
+        font-family: var(--ttl-font);
+    }
+
+    .collection {
+        display: flex;
+        justify-content: start;
+        gap: 2rem;
+        width: 100%;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 1rem 50px 1.5rem;
+
+        position: relative;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        -webkit-overflow-scrolling: touch;
+
+        // hide scrollbar (optional)
+        &::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #aaa;
+            border-radius: 20px;
+        }
+
+
+        .product {
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+        }
+    }
+}
