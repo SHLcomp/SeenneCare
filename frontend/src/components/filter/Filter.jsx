@@ -1,17 +1,18 @@
 import React from "react";
-import"./Filter.scss"
+import "./Filter.scss";
 
 import { useProducts } from "../../context/ProductContext";
-
-import products from "../../assets/data/products";
+// import products from "../../assets/data/products";
 
 const Filter = () => {
   // Dynamic categories from products
+  const { products } = useProducts();
+  const productsP = products.map((product)=> product)
 
   const categories = [
     "all",
 
-    ...new Set(products.map((product) => product.category)),
+    ...new Set(productsP.map((product) => product.category)),
   ];
 
   // Dynamic skin types
@@ -20,16 +21,13 @@ const Filter = () => {
     "all",
 
     ...new Set(
-      products
+      productsP
         .flatMap((product) => product.skinTypes)
         .filter((type) => type !== "All Skin Types"),
     ),
   ];
 
-    const {  filters, updateFilter, clearFilters } =
-      useProducts();
-  
-  
+  const { filters, updateFilter, clearFilters } = useProducts();
 
   return (
     <aside className="filtering">
@@ -44,7 +42,6 @@ const Filter = () => {
           value={filters.sort}
           onChange={(e) => updateFilter("sort", e.target.value)}
         >
-
           <option value="price-low">Price: Low to High</option>
 
           <option value="price-high">Price: High to Low</option>

@@ -1,0 +1,125 @@
+.dashboard {
+width: min(900px, 90%);
+margin: 60px auto;
+padding: 40px;
+background: #fff;
+border: 1px solid #e5e5e5;
+border-radius: 16px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+h1 {
+margin: 0 0 35px;
+font-size: 2rem;
+font-weight: 600;
+}
+
+form {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 22px;
+}
+
+input,
+select,
+textarea {
+width: 100%;
+box-sizing: border-box;
+padding: 13px 15px;
+border: 1px solid #d5d5d5;
+border-radius: 8px;
+background: #fff;
+font: inherit;
+color: #222;
+outline: none;
+transition:
+border-color 0.2s ease,
+box-shadow 0.2s ease;
+
+
+&::placeholder {
+  color: #999;
+}
+
+&:focus {
+  border-color: #222;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+
+}
+
+textarea {
+grid-column: 1 / -1;
+min-height: 130px;
+resize: vertical;
+}
+
+select {
+cursor: pointer;
+}
+
+input[name="description"],
+textarea {
+grid-column: 1 / -1;
+}
+
+button {
+grid-column: 1 / -1;
+
+
+padding: 14px 20px;
+border: none;
+border-radius: 8px;
+background: #222;
+color: #fff;
+font: inherit;
+font-weight: 600;
+cursor: pointer;
+
+transition:
+  background 0.2s ease,
+  transform 0.2s ease;
+
+&:hover {
+  background: #000;
+}
+
+&:active {
+  transform: translateY(1px);
+}
+
+
+}
+
+p {
+margin-top: 25px;
+padding: 12px 15px;
+border-radius: 8px;
+background: #f3f3f3;
+font-size: 0.95rem;
+}
+}
+
+@media (max-width: 700px) {
+.dashboard {
+width: 90%;
+padding: 25px;
+margin: 30px auto;
+
+form {
+  grid-template-columns: 1fr;
+}
+
+textarea,
+button {
+  grid-column: auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+
+}
+}

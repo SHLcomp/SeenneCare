@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import ProdFilter from "./components/prodFilter/ProdFilter";
 import Shop from "./pages/shop/Shop";
 import ShopAll from "./pages/shop/ShopAll";
+import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,10 @@ function App() {
       path: "/shop",
       element: <ShopAll />,
     },
+    {
+      path: "/sarah",
+      element: <AdminDashboard />
+    }
   ]);
 
   return (

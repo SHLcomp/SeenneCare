@@ -9,7 +9,7 @@ const Product = ({ item, eyebrow }) => {
     >
       <Link to={`/product/${item.slug}`} className="link">
         <div className="img">
-          <img src={item.imageSrc} alt={item.id} />
+          <img src={item.imageSrc} alt={item._id} />
         </div>
       </Link>
       <div className="text">
