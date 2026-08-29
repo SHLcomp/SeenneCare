@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import data from "../../assets/data/products.js"
-import ProductDisplay from '../../pages/productDisplay/ProductDisplay';
+import ProductDisplay from '../../pages/productDisplay/ProductDisplay.jsx';
 
 const ProdFilter = () => {
     const {itemSlug} = useParams();
