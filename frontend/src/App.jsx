@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
+import Home from "./pages/Home.jsx";
 import { RouterProvider } from "react-router-dom";
-import ProdFilter from "./components/prodFilter/ProdFilter";
-import Shop from "./pages/shop/Shop";
-import ShopAll from "./pages/shop/ShopAll";
-import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
+import ProdFilter from "./components/prodFilter/ProdFilter.jsx";
+import Shop from "./pages/shop/Shop.jsx";
+import ShopAll from "./pages/shop/ShopAll.jsx";
+import AdminDashboard from "./pages/adminDashboard/AdminDashboard.jsx";
 
 function App() {
   const router = createBrowserRouter([
